@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lp-lab
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8050
+    healthCheckPath: /
